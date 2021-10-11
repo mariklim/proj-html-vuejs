@@ -5,12 +5,23 @@
 // font-family: 'Work Sans', sans-serif;
 
 //Variables
-//Variables
 @import "./variables.scss";
 
 //reset
 *{
     box-sizing: border-box;
-    margin: auto;
-    padding: auto;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Work Sans', sans-serif;
+}
+
+//common
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
 }

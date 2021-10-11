@@ -1,10 +1,9 @@
 <template>
   <div id="app">
-    <Header />
+    <Header/>
     <Hero />
     <main>
       Main
-      <i class="fas fa-shopping-cart"></i>
       <Products />
       <Corporate />
       <Steps />
