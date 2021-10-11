@@ -9,7 +9,7 @@
 
 <script>
 export default {
-    name:"Contacts"
+    name:"Footer"
 
 }
 </script>

@@ -9,7 +9,6 @@
         <a href="#"><i class="fas fa-shopping-cart"></i></a>
       </li>
     </ul>
-    <!-- <Link v-for="(link, index) in links" :key="index" :link="link" /> -->
   </header>
 </template>
 
@@ -33,12 +32,12 @@ export default {
 <style lang="scss">
 @import "../assets/style/common";
 header {
-  // height: 4.375rem;
-  background-color: $bg_header;
+  height: 4.375rem;
+  background-color: transparent;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: .625rem;
+  padding: 20px;
 
 
   ul{
