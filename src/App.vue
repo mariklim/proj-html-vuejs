@@ -4,6 +4,7 @@
     <Hero />
     <main>
       Main
+      <i class="fas fa-shopping-cart"></i>
       <Products />
       <Corporate />
       <Steps />
@@ -48,4 +49,6 @@ export default {
  
 
 <style lang="scss">
+@import "~@fortawesome/fontawesome-free/css/all.css";
+@import "./assets/style/common";
 </style>
