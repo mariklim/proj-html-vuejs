@@ -1,2 +1,8 @@
 //BG
-$bg_header:  #f5e9f3
+$bg_header:  #f5e9f3;
+
+//Containers
+@mixin container_80{
+    width: 80%;
+    margin: auto;
+}

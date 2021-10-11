@@ -33,11 +33,15 @@ export default {
 @import "../assets/style/common";
 header {
   height: 4.375rem;
+  top:0;
+  left: 0;
+  width: 100%;
   background-color: transparent;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  margin-top: 1.25rem;
+  padding: 1.875rem;
 
 
   ul{
