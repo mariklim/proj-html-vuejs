@@ -1,11 +1,17 @@
 <template>
 <div>Header</div>
+<Nav/>
   
 </template>
 
 <script>
+import Nav from "./Date/Nav.vue";
+
 export default {
-    name:"Header"
+    name:"Header",
+    components:{
+        Nav,
+    }
 
 }
 </script>
