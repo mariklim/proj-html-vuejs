@@ -10,6 +10,7 @@
           orci tempor.
         </p>
       </div>
+      <button class="btn_white">Explore our profucts</button>
     </div>
   </section>
 </template>
@@ -39,7 +40,7 @@ export default {
   .text {
     width: 40%;
     h2 {
-      padding: 0.9375rem 0;
+      padding-top: .9375rem;
       font-family: "Lora", serif;
       font-size: 1.875rem;
     }
@@ -47,9 +48,10 @@ export default {
       font-weight: 400;
       font-size: 0.625rem;
     }
-    p{
-        font-size: .8125rem;
-        line-height: 1.25rem;
+    p {
+      font-size: 0.8125rem;
+      line-height: 1.25rem;
+      padding: 1.5625rem 0;
     }
   }
 }

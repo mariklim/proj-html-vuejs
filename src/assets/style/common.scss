@@ -26,3 +26,23 @@ ul{
 a{
     text-decoration: none;
 }
+
+//btn
+
+.btn_white{
+    background-color: white;
+    border: 0;
+    border-radius: .5rem;
+    padding: .625rem 1.25rem;
+    font-size: .6875rem;
+    color:$main_color;
+}
+
+.btn_lilac{
+    background-color: $main_color;
+    border: 0;
+    border-radius: .5rem;
+    padding: .625rem 1.25rem;
+    font-size: .6875rem;
+    color:white;
+}
