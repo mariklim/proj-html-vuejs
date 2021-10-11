@@ -1,8 +1,16 @@
 <template>
   <section class="header-hero">
-      <div class="container_80">
-          Ciao
+    <div class="container_80">
+      <div class="text">
+        <h5>FRESH & TASTY BAKERY EVERY DAY</h5>
+        <h2>The Perfect Fresh Bread</h2>
+        <p>
+          Cras consequat lectus vestibulum tortor pulvinar, quis euismod nisl
+          varius. Aliquam erat volutpat. Nullam quis sagittis nibh ac nulla id
+          orci tempor.
+        </p>
       </div>
+    </div>
   </section>
 </template>
 
@@ -14,6 +22,7 @@ export default {
 
 <style lang="scss">
 @import "../assets/style/variables.scss";
+@import "../assets/style/common.scss";
 .header-hero {
   margin-top: -9.375rem;
   height: 56.25rem;
@@ -24,9 +33,24 @@ export default {
   padding: 6.25rem 0;
 }
 
-.container_80{
-    @include container_80;
-    border: 1px solid white;
-    margin-top: 200px;
+.container_80 {
+  @include container_80;
+  margin-top: 200px;
+  .text {
+    width: 40%;
+    h2 {
+      padding: 0.9375rem 0;
+      font-family: "Lora", serif;
+      font-size: 1.875rem;
+    }
+    h5 {
+      font-weight: 400;
+      font-size: 0.625rem;
+    }
+    p{
+        font-size: .8125rem;
+        line-height: 1.25rem;
+    }
+  }
 }
 </style>
