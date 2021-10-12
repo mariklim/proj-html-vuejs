@@ -3,8 +3,8 @@
     <div class="products">
       <div class="our_products">
         <div class="text">
-          <h5 class="section_small_title">OUR PRODUCTS</h5>
-          <h3 class="semibold_section_title">
+          <h5>OUR PRODUCTS</h5>
+          <h3>
             All our delectable pastries are backed fresh in our Kitchen very
             morning, and are made with all-natural, all organic ingredients.
           </h3>
@@ -50,11 +50,12 @@ export default {
 @import "../../assets/style/variables";
 .products {
   @include container_80;
+  @include section_header;
+  @include margin_top_bottom_70px;
   display: flex;
   justify-content: space-between;
-  margin-top: 3.125rem;
-  margin-bottom: 3.125rem;
-  background-color: cadetblue;
+  // margin-top: 4.375rem;
+  // margin-bottom: 4.375rem;
   .our_products {
     width: 30%;
     & .text {
