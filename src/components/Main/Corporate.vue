@@ -68,7 +68,17 @@ export default {
         align-items: center;
         color: white;
         text-align: center;
+        opacity: 0;
+        transition: opacity 1s;
       }
+    }
+
+    //Hover
+    .card.corporate:hover .card.corporate.active{
+        opacity: 1;
+    }
+     .card.wedding:hover .card.wedding.active{
+        opacity: 1;
     }
   }
 }
