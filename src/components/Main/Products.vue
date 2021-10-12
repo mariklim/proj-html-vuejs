@@ -11,7 +11,7 @@
         </div>
         <button class="btn_lilac">Explore our profucts</button>
       </div>
-      <div class="prod_gallary">
+      <div class="prod_gallery">
         <ul>
           <li>
             <button class="btn_prev_next btn_prev">
@@ -62,7 +62,7 @@ export default {
       padding-right: 1.25rem;
     }
   }
-  .prod_gallary {
+  .prod_gallery {
     li {
       display: flex;
       align-items: center;
