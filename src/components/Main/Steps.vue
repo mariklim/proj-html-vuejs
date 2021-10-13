@@ -51,6 +51,27 @@
         </div>
       </div>
     </section>
+     <section class="section_3">
+      <div class="container_step">
+        <div class="step_top">
+          <div class="step_title">
+            <h2>Delivered to your home</h2>
+          </div>
+          <div class="number_step">03</div>
+        </div>
+        <div class="step_bottom">
+          <div class="text">
+            <h5>BAKED TO ORDER & GIFT WRAPPED</h5>
+            <p>
+              Cras consequat lectus vestibulum tortor pulvinar, quis euismod
+              nisl varius. Ut eu laoreet ex. Aliquam erat volutpat. Nullam quis
+              sagittis nibh. Morbi consectetur ultricies ante ac congue. Donec
+              lorem erat, finibus in velit placerat, rutrum augue.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
   </section>
 </template>
 
@@ -64,6 +85,7 @@ export default {
 <style lang="scss" scoped>
 @import "../../assets/style/common";
 @import "../../assets/style/variables";
+//STEP 1
 .section_1 {
   @include container_80;
   @include section_header;
@@ -78,7 +100,9 @@ export default {
   background-size: cover;
   color: white;
 }
+//STEP 1
 
+//STEP 2
 .section_2 {
   @include container_80;
   @include section_header;
@@ -123,8 +147,24 @@ export default {
     }
   }
 }
+//STEP 2
 
-//common
+.section_3 {
+  @include container_80;
+  @include section_header;
+  @include margin_top_bottom_70px;
+  height: 37.5rem;
+  background-image: linear-gradient(
+      170deg,
+      rgba(35, 33, 37, 0.3) 0%,
+      rgba(35, 33, 37, 0.8) 100%
+    ),
+    url("../../assets/image/bakery-process-3.jpg");
+  background-size: cover;
+  color: white;
+}
+
+//common  per STEP 1 ,2 e 3
 .container_step {
   width: 80%;
   height: 100%;
