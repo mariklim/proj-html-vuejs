@@ -8,10 +8,14 @@
               </div>
               <div class="number_step">
                   01
-
               </div>
           </div>
-          <div class="step_bottom"></div>
+          <div class="step_bottom">
+              <div class="text">
+                  <h5>MANUAL INGREDIENTS SELECTION</h5>
+                  <p>Cras consequat lectus vestibulum tortor pulvinar, quis euismod nisl varius. Ut eu laoreet ex. Aliquam erat volutpat. Nullam quis sagittis nibh. Morbi consectetur ultricies ante ac congue. Donec lorem erat, finibus in velit placerat, rutrum augue.</p>
+              </div>
+          </div>
       </div>
   </section>
 </template>
@@ -38,7 +42,14 @@ section {
 }
 .container_step{
     width: 80%;
+    height: 100%;
     margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  
+    
+   
     .step_top{
         display: flex;
         justify-content: space-between;
@@ -51,7 +62,15 @@ section {
                 font-size: 3.75rem;
                 font-weight: 200;
             }
-
+    }
+    .step_bottom{
+        align-self: flex-end;
+        display: flex;
+        justify-content: end;
+        padding: 1.25rem 0;
+        .text{
+            width: 40%;
+        }
     }
 }
 </style>
