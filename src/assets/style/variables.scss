@@ -1,6 +1,8 @@
 //colors
 $main_color:  #55328b;
 $main_color_light: #f7f0f3;
+$sky:#f1f9fb;
+$light_pink:#faf3e3;
 
 //Containers
 @mixin container_80{
@@ -26,6 +28,7 @@ $main_color_light: #f7f0f3;
     h3{
         font-size: 1.5625rem;
         padding: 1.5625rem 0;
+        font-family: "Lora", serif;
     }
     p {
         font-size: 0.9375rem;
