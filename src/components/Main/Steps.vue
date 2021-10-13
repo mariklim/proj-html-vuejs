@@ -42,7 +42,13 @@
             </div>
           </div>
         </div>
-        <div class="box_right">ciao</div>
+        <div class="box_right">
+            <div class="text">
+            <h5>DONT JUST TAKE OUR WORD FOR IT</h5>
+            <h3>“Finally found an alternative to the mass produced products. Something that incorporates real organic ingredients, nutrient dense wellness while promoting sustainability and activity.”</h3>
+            <h4>Rachel Cooper, Founder</h4>
+            </div>
+        </div>
       </div>
     </section>
   </section>
@@ -104,9 +110,17 @@ export default {
     }
   }
   .box_right {
+      display: flex;
+      justify-content: center;
+      align-items: center;
     width: 50%;
     height: 100%;
-    background-color: yellow;
+    background-color: $main_color_light;
+    padding: 3.125rem;
+    color: $main_color;
+    .text{
+        width: 80%;
+    }
   }
 }
 
