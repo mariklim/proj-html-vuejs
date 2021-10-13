@@ -42,22 +42,20 @@
       <div class="prod_gallery">
         <ul>
           <li>
-            <!-- <button class="btn_prev_next btn_prev">
-              <i class="fas fa-chevron-left"></i>
-            </button> -->
             <div class="cardImg">
-              <a href="#">
+              <div class="img">
                 <img
                   src="../../assets/image/choco-chip-cookies-400x510.jpg"
                   alt="choco chip cookies"
-              /></a>
+                />
+              </div>
               <div class="description">
                 <h4>Choco chip cookies</h4>
                 <h5>$18.00 – $32.00</h5>
               </div>
             </div>
           </li>
-          <li>
+          <!-- <li>
             <div class="cardImg">
               <a href="#">
                 <img
@@ -69,8 +67,8 @@
                 <h5>$18.00 – $32.00</h5>
               </div>
             </div>
-          </li>
-          <li>
+          </li> -->
+          <!-- <li>
             <div class="cardImg">
               <a href="#">
                 <img
@@ -82,8 +80,8 @@
                 <h5>$18.00 – $32.00</h5>
               </div>
             </div>
-          </li>
-          <li>
+          </li> -->
+          <!-- <li>
             <div class="cardImg">
               <a href="#">
                 <img
@@ -95,10 +93,7 @@
                 <h5>$18.00 – $32.00</h5>
               </div>
             </div>
-            <button class="btn_prev_next btn_next">
-              <i class="fas fa-chevron-right"></i>
-            </button>
-          </li>
+          </li> -->
         </ul>
       </div>
     </div>
@@ -193,53 +188,72 @@ export default {
   .prod_gallery {
     ul {
       display: flex;
-      .cardImg{
+      .cardImg {
         text-align: center;
         text-transform: capitalize;
-          .description{
-            margin-top:.625rem;
-          }
-        
+        .description {
+          margin-top: 0.625rem;
+        }
       }
-      li:first-child::before{
+
+      li .img {
+        position: relative;
+        max-width: 18.75rem;
+         display: flex;
+        align-items: center;
+        img {
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+
+      li .img::after {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        content: "ciao";
+        background-color: rgba(39, 33, 33, 0.24);
+      }
+
+      //Bottoni slider
+      //1.bottone prev <
+      li .img:first-child::before {
         display: flex;
         align-items: center;
         justify-content: center;
         content: url(../../assets/image/arrow-left.png);
         font-family: "Font Awesome 5 Free";
         width: 1.875rem;
-        height:3.125rem;
+        height: 3.125rem;
         background-color: #56328b62;
         color: white;
-        // padding: .3125rem .625rem;
         cursor: pointer;
         position: absolute;
       }
 
+      //2.bottone next >
+
+      li .img:last-child::before {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        content: url(../../assets/image/arrow-right.png);
+        font-family: "Font Awesome 5 Free";
+        width: 1.875rem;
+        height: 3.125rem;
+        background-color: #56328b62;
+        color: white;
+        cursor: pointer;
+        position: absolute;
+        right: 0;
+      }
+      //Bottoni slider fine
+
       li:not(:last-child) {
         margin: 0 0.625rem 0 0;
       }
-    }
-
-    li {
-      display: flex;
-      align-items: center;
-      position: relative;
-    }
-    li a {
-      display: inline-block;
-      max-width: 18.75rem;
-      img {
-        width: 100%;
-      }
-    }
-    button.btn_next {
-      position: absolute;
-      left: calc(100% - 1.875rem);
-    }
-    button.btn_prev {
-      position: absolute;
-      right: calc(100% - 1.875rem);
     }
   }
 }
