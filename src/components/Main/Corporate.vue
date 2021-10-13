@@ -42,39 +42,59 @@
       <div class="prod_gallery">
         <ul>
           <li>
-            <button class="btn_prev_next btn_prev">
+            <!-- <button class="btn_prev_next btn_prev">
               <i class="fas fa-chevron-left"></i>
-            </button>
-            <a href="#">
-              <img
-                src="../../assets/image/choco-chip-cookies-400x510.jpg"
-                alt="choco chip cookies"
-              />
-            </a>
+            </button> -->
+            <div class="cardImg">
+              <a href="#">
+                <img
+                  src="../../assets/image/choco-chip-cookies-400x510.jpg"
+                  alt="choco chip cookies"
+              /></a>
+              <div class="description">
+                <h4>Choco chip cookies</h4>
+                <h5>$18.00 – $32.00</h5>
+              </div>
+            </div>
           </li>
           <li>
-            <a href="#">
-              <img
-                src="../../assets/image/strawberry-jam-cookies-400x510.jpg"
-                alt="strawberry jam cookies"
-              />
-            </a>
+            <div class="cardImg">
+              <a href="#">
+                <img
+                  src="../../assets/image/strawberry-jam-cookies-400x510.jpg"
+                  alt="strawberry jam cookies"
+              /></a>
+              <div class="description">
+                <h4>strawberry jam cookies</h4>
+                <h5>$18.00 – $32.00</h5>
+              </div>
+            </div>
           </li>
           <li>
-            <a href="#">
-              <img
-                src="../../assets/image/strawberry-donut-400x510.jpg"
-                alt="strawberry jam cookies"
-              />
-            </a>
+            <div class="cardImg">
+              <a href="#">
+                <img
+                  src="../../assets/image/strawberry-donut-400x510.jpg"
+                  alt="strawberry donut"
+              /></a>
+              <div class="description">
+                <h4>strawberry donut</h4>
+                <h5>$18.00 – $32.00</h5>
+              </div>
+            </div>
           </li>
           <li>
-            <a href="#">
-              <img
-                src="../../assets/image/perfect-macarons-400x510.jpg"
-                alt="strawberry jam cookies"
-              />
-            </a>
+            <div class="cardImg">
+              <a href="#">
+                <img
+                  src="../../assets/image/perfect-macarons-400x510.jpg"
+                  alt="perfect macarons"
+              /></a>
+              <div class="description">
+                <h4>perfect macarons</h4>
+                <h5>$18.00 – $32.00</h5>
+              </div>
+            </div>
             <button class="btn_prev_next btn_next">
               <i class="fas fa-chevron-right"></i>
             </button>
@@ -166,17 +186,36 @@ export default {
     p {
       padding-top: 0.625rem;
       padding-bottom: 0.625rem;
-      font-size: .75rem;
+      font-size: 0.75rem;
       line-height: 1.25rem;
     }
   }
   .prod_gallery {
-    //   a:not(:last-child){
-    //        margin-left: 1.25rem;
-
-    //   }
     ul {
       display: flex;
+      .cardImg{
+        text-align: center;
+        text-transform: capitalize;
+          .description{
+            margin-top:.625rem;
+          }
+        
+      }
+      li:first-child::before{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        content: url(../../assets/image/arrow-left.png);
+        font-family: "Font Awesome 5 Free";
+        width: 1.875rem;
+        height:3.125rem;
+        background-color: #56328b62;
+        color: white;
+        // padding: .3125rem .625rem;
+        cursor: pointer;
+        position: absolute;
+      }
+
       li:not(:last-child) {
         margin: 0 0.625rem 0 0;
       }
@@ -188,6 +227,7 @@ export default {
       position: relative;
     }
     li a {
+      display: inline-block;
       max-width: 18.75rem;
       img {
         width: 100%;

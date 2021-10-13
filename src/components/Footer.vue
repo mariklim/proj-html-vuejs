@@ -1,19 +1,16 @@
 <template>
-<section>
-<div>Hero footer CTA Shop!
+  <section>
+    <div>Hero footer CTA Shop!
 </div>
 <div>footer top, footer bottom</div>
-</section>
-  
+  </section>
 </template>
 
 <script>
 export default {
-    name:"Footer"
-
-}
+  name: "Footer",
+};
 </script>
 
 <style lang="scss">
-
 </style>

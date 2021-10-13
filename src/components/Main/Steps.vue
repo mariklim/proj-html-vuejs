@@ -1,11 +1,17 @@
 <template>
-<div>3 steps, how we work</div>
+<div>3 steps, how we work
+
+</div>
   
 </template>
 
 <script>
+
 export default {
-    name:"Steps"
+    name:"Steps",
+    components:{
+      
+    }
 
 }
 </script>
