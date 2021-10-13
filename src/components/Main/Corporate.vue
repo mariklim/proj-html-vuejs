@@ -48,6 +48,12 @@
                   src="../../assets/image/choco-chip-cookies-400x510.jpg"
                   alt="choco chip cookies"
                 />
+                <div class="img_cover">
+                  <div class="description">
+                    <h4>SELECT OPTIONS /</h4>
+                    <h5>QUICK VIEW</h5>
+                  </div>
+                </div>
               </div>
               <div class="description">
                 <h4>Choco chip cookies</h4>
@@ -55,45 +61,66 @@
               </div>
             </div>
           </li>
-          <!-- <li>
+          <li>
             <div class="cardImg">
-              <a href="#">
+              <div class="img">
                 <img
-                  src="../../assets/image/strawberry-jam-cookies-400x510.jpg"
-                  alt="strawberry jam cookies"
-              /></a>
+                  src="../../assets/image/choco-chip-cookies-400x510.jpg"
+                  alt="choco chip cookies"
+                />
+                <div class="img_cover">
+                  <div class="description">
+                    <h4>SELECT OPTIONS /</h4>
+                    <h5>QUICK VIEW</h5>
+                  </div>
+                </div>
+              </div>
               <div class="description">
-                <h4>strawberry jam cookies</h4>
+                <h4>Choco chip cookies</h4>
                 <h5>$18.00 – $32.00</h5>
               </div>
             </div>
-          </li> -->
-          <!-- <li>
+          </li>
+          <li>
             <div class="cardImg">
-              <a href="#">
+              <div class="img">
                 <img
-                  src="../../assets/image/strawberry-donut-400x510.jpg"
-                  alt="strawberry donut"
-              /></a>
+                  src="../../assets/image/choco-chip-cookies-400x510.jpg"
+                  alt="choco chip cookies"
+                />
+                <div class="img_cover">
+                  <div class="description">
+                    <h4>SELECT OPTIONS /</h4>
+                    <h5>QUICK VIEW</h5>
+                  </div>
+                </div>
+              </div>
               <div class="description">
-                <h4>strawberry donut</h4>
+                <h4>Choco chip cookies</h4>
                 <h5>$18.00 – $32.00</h5>
               </div>
             </div>
-          </li> -->
-          <!-- <li>
+          </li>
+           <li>
             <div class="cardImg">
-              <a href="#">
+              <div class="img">
                 <img
-                  src="../../assets/image/perfect-macarons-400x510.jpg"
-                  alt="perfect macarons"
-              /></a>
+                  src="../../assets/image/choco-chip-cookies-400x510.jpg"
+                  alt="choco chip cookies"
+                />
+                <div class="img_cover">
+                  <div class="description">
+                    <h4>SELECT OPTIONS /</h4>
+                    <h5>QUICK VIEW</h5>
+                  </div>
+                </div>
+              </div>
               <div class="description">
-                <h4>perfect macarons</h4>
+                <h4>Choco chip cookies</h4>
                 <h5>$18.00 – $32.00</h5>
               </div>
             </div>
-          </li> -->
+          </li>
         </ul>
       </div>
     </div>
@@ -188,6 +215,11 @@ export default {
   .prod_gallery {
     ul {
       display: flex;
+      li {
+        position: relative;
+        display: flex;
+        align-items: center;
+      }
       .cardImg {
         text-align: center;
         text-transform: capitalize;
@@ -199,7 +231,7 @@ export default {
       li .img {
         position: relative;
         max-width: 18.75rem;
-         display: flex;
+        display: flex;
         align-items: center;
         img {
           width: 100%;
@@ -207,19 +239,30 @@ export default {
         }
       }
 
-      li .img::after {
+      .img_cover {
         position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         top: 0;
         bottom: 0;
         right: 0;
         left: 0;
-        content: "ciao";
-        background-color: rgba(39, 33, 33, 0.24);
+        background-color: rgba(39, 33, 33, 0.39);
+        opacity: 0;
+        transition: all 1s;
+        cursor: pointer;
+        .description {
+          color: white;
+        }
+      }
+      .img_cover:hover {
+        opacity: 1;
       }
 
       //Bottoni slider
       //1.bottone prev <
-      li .img:first-child::before {
+      li:first-child::before {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -231,12 +274,13 @@ export default {
         color: white;
         cursor: pointer;
         position: absolute;
+        z-index: 1;
       }
 
       //2.bottone next >
 
-      li .img:last-child::before {
-        display: flex;
+      li:last-child::before {
+        display: flex;  
         align-items: center;
         justify-content: center;
         content: url(../../assets/image/arrow-right.png);
@@ -248,6 +292,7 @@ export default {
         cursor: pointer;
         position: absolute;
         right: 0;
+        z-index: 1;
       }
       //Bottoni slider fine
 
