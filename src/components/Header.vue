@@ -51,13 +51,22 @@ header {
     padding: 0 0.625rem;
     li {
       a {
-        padding: 0 1.25rem;
+        margin: 0 1.25rem;
         font-size: 0.75rem;
         font-weight: 500;
         text-transform: uppercase ;
+        display: inline-block;
+        padding-bottom: .625rem;
+        border-bottom: 2px solid transparent;
+        transition: border-bottom .3s;
       }
     }
   }
+  
+a:hover {
+    border-bottom: 2px solid $main_color;
+}
+  
 
   .logo {
     width: 9.375rem;
