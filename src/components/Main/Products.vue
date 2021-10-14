@@ -69,8 +69,6 @@ export default {
   @include margin_top_bottom_70px;
   display: flex;
   justify-content: space-between;
-  // margin-top: 4.375rem;
-  // margin-bottom: 4.375rem;
   .our_products {
     width: 30%;
     & .text {
