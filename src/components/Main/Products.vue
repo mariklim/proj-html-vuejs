@@ -9,29 +9,43 @@
             morning, and are made with all-natural, all organic ingredients.
           </h3>
         </div>
-        <button class="btn_lilac">Explore our profucts</button>
+        <button class="btn_lilac">Explore our products</button>
       </div>
       <div class="prod_gallery">
         <ul>
           <li>
-            <button class="btn_prev_next btn_prev">
-              <i class="fas fa-chevron-left"></i>
-            </button>
-            <a class="margin_left_10" href="#">
-              <img
-                src="../../assets/image/choco-chip-cookies-400x510.jpg"
-                alt="choco chip cookies"
-              />
-            </a>
-            <a href="#">
-              <img
-                src="../../assets/image/strawberry-jam-cookies-400x510.jpg"
-                alt="strawberry jam cookies"
-              />
-            </a>
-            <button class="btn_prev_next btn_next">
-              <i class="fas fa-chevron-right"></i>
-            </button>
+            <div class="cardImg">
+              <div class="img">
+                <img
+                  src="../../assets/image/choco-chip-cookies-500x638.jpg"
+                  alt="choco chip cookies"
+                />
+                <div class="img_cover">
+                  <div class="description">
+                    <h4>Choco chip cookies</h4>
+                    <p>Coocies, Pastries</p>
+                    <h4 class="price">$18.00 – $32.00</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="cardImg">
+              <div class="img">
+                <img
+                  src="../../assets/image/strawberry-jam-cookies-500x638.jpg"
+                  alt="strawberry jam cookies"
+                />
+                <div class="img_cover">
+                  <div class="description">
+                    <h4>Strawberry jam cookies</h4>
+                    <p>Coocies, Pastries</p>
+                    <h4 class="price">$18.00 – $32.00</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
           </li>
         </ul>
       </div>
@@ -48,6 +62,7 @@ export default {
 <style lang="scss">
 @import "../../assets/style/common";
 @import "../../assets/style/variables";
+@import "../../assets/style/Gallery";
 .products {
   @include container_80;
   @include section_header;
@@ -61,31 +76,6 @@ export default {
     & .text {
       padding-right: 1.25rem;
     }
-  }
-  .prod_gallery {
-    li {
-      display: flex;
-      align-items: center;
-      position: relative;
-    }
-    li a {
-      max-width: 25rem;
-      img {
-        width: 100%;
-      }
-    }
-    button.btn_next {
-      position: absolute;
-      left: calc(100% - 1.875rem);
-    }
-    button.btn_prev {
-      position: absolute;
-      right: calc(100% - 1.875rem);
-    }
-  }
-  //margin destro per spaziare immagini per first child per tag a
-  .margin_left_10 {
-    margin-right: 0.625rem;
   }
 }
 </style>

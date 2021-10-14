@@ -138,6 +138,7 @@ export default {
 <style lang="scss">
 @import "../../assets/style/common";
 @import "../../assets/style/variables";
+@import "../../assets/style/Gallery";
 
 .corporate {
   @include section_header;
@@ -212,94 +213,6 @@ export default {
       line-height: 1.25rem;
     }
   }
-  .prod_gallery {
-    ul {
-      display: flex;
-      li {
-        position: relative;
-        display: flex;
-        align-items: center;
-      }
-      .cardImg {
-        text-align: center;
-        text-transform: capitalize;
-        .description {
-          margin-top: 0.625rem;
-        }
-      }
 
-      li .img {
-        position: relative;
-        max-width: 18.75rem;
-        display: flex;
-        align-items: center;
-        img {
-          width: 100%;
-          object-fit: cover;
-        }
-      }
-
-      .img_cover {
-        position: absolute;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        left: 0;
-        background-color: rgba(39, 33, 33, 0.39);
-        opacity: 0;
-        transition: all 1s;
-        cursor: pointer;
-        .description {
-          color: white;
-        }
-      }
-      .img_cover:hover {
-        opacity: 1;
-      }
-
-      //Bottoni slider
-      //1.bottone prev <
-      li:first-child::before {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        content: url(../../assets/image/arrow-left.png);
-        font-family: "Font Awesome 5 Free";
-        width: 1.875rem;
-        height: 3.125rem;
-        background-color: #56328b62;
-        color: white;
-        cursor: pointer;
-        position: absolute;
-        z-index: 1;
-      }
-
-      //2.bottone next >
-
-      li:last-child::before {
-        display: flex;  
-        align-items: center;
-        justify-content: center;
-        content: url(../../assets/image/arrow-right.png);
-        font-family: "Font Awesome 5 Free";
-        width: 1.875rem;
-        height: 3.125rem;
-        background-color: #56328b62;
-        color: white;
-        cursor: pointer;
-        position: absolute;
-        right: 0;
-        z-index: 1;
-      }
-      //Bottoni slider fine
-
-      li:not(:last-child) {
-        margin: 0 0.625rem 0 0;
-      }
-    }
-  }
 }
 </style>

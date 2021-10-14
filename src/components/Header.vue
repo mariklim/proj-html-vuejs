@@ -61,9 +61,7 @@ header {
       }
     }
   }
-  .currentPage{
-    border-bottom: 2px solid $main_color;
-  }
+ 
   a:hover {
     border-bottom: 2px solid $main_color;
   }

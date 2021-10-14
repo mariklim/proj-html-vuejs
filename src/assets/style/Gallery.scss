@@ -1,0 +1,137 @@
+
+
+//SCSS
+.prod_gallery {
+    ul {
+      display: flex;
+      li {
+        position: relative;
+        display: flex;
+        align-items: center;
+      }
+      .cardImg {
+        text-align: center;
+        text-transform: capitalize;
+        .description {
+          margin-top: 0.625rem;
+        }
+      }
+
+      li .img {
+        position: relative;
+        display: flex;
+        align-items: center;
+        img {
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+
+      .img_cover {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background-color: rgba(39, 33, 33, 0.39);
+        opacity: 0;
+        transition: all 1s;
+        cursor: pointer;
+        .description {
+          color: white;
+        }
+      }
+      .img_cover:hover {
+        opacity: 1;
+      }
+
+      //Bottoni slider
+      //1.bottone prev <
+      li:first-child::before {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        content: url(../../assets/image/arrow-left.png);
+        font-family: "Font Awesome 5 Free";
+        width: 1.875rem;
+        height: 3.125rem;
+        background-color: #56328b62;
+        color: white;
+        cursor: pointer;
+        position: absolute;
+        z-index: 1;
+      }
+
+      //2.bottone next >
+
+      li:last-child::before {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        content: url(../../assets/image/arrow-right.png);
+        font-family: "Font Awesome 5 Free";
+        width: 1.875rem;
+        height: 3.125rem;
+        background-color: #56328b62;
+        color: white;
+        cursor: pointer;
+        position: absolute;
+        right: 0;
+        z-index: 1;
+      }
+      li:not(:last-child) {
+        margin: 0 0.625rem 0 0;
+      }
+    }
+  }
+
+
+//BASE per HTML
+
+// <div class="prod_gallery">
+// <ul>
+//   <li>
+//     <div class="cardImg">
+//       <div class="img">
+//         <img
+//           src="../../assets/image/choco-chip-cookies-400x510.jpg"
+//           alt="choco chip cookies"
+//         />
+//         <div class="img_cover">
+//           <div class="description">
+//             <h4>SELECT OPTIONS /</h4>
+//             <h5>QUICK VIEW</h5>
+//           </div>
+//         </div>
+//       </div>
+//       <div class="description">
+//         <h4>Choco chip cookies</h4>
+//         <h5>$18.00 – $32.00</h5>
+//       </div>
+//     </div>
+//   </li>
+//   <li>
+//     <div class="cardImg">
+//       <div class="img">
+//         <img
+//           src="../../assets/image/choco-chip-cookies-400x510.jpg"
+//           alt="choco chip cookies"
+//         />
+//         <div class="img_cover">
+//           <div class="description">
+//             <h4>SELECT OPTIONS /</h4>
+//             <h5>QUICK VIEW</h5>
+//           </div>
+//         </div>
+//       </div>
+//       <div class="description">
+//         <h4>Choco chip cookies</h4>
+//         <h5>$18.00 – $32.00</h5>
+//       </div>
+//     </div>
+//   </li>
+// </ul>
+// </div>
