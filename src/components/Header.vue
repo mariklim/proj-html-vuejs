@@ -5,7 +5,7 @@
     </div>
     <ul>
       <li>
-        <Link v-for="(link, index) in links" :key="index" :link="link" />
+        <Link v-for="(link, index) in resultB" :key="index" :link="link" />
         <a href="#"><i class="fas fa-shopping-cart"></i></a>
       </li>
     </ul>
@@ -24,7 +24,12 @@ export default {
   data() {
     return {
       links: elm,
+      resultB: "",
     };
+  },
+  created() {
+    this.resultB = this.links.slice(8,1);
+    console.log(this.resultB);
   },
 };
 </script>
