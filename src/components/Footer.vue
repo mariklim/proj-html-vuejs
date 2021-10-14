@@ -22,7 +22,7 @@
     <section class="footer-nav">
       <ul>
         <li>
-          <Link v-for="(link, index) in links" :key="index" :link="link" />
+          <Link v-for="(link, index) in result" :key="index" :link="link" />
           <a href="#"><i class="fas fa-shopping-cart"></i></a>
         </li>
       </ul>
@@ -41,8 +41,14 @@ export default {
   data() {
     return {
       links: elm,
+      result:'',
     };
   },
+  created() {
+	this.result = this.links.slice(1);
+  console.log(this.result);
+}
+  
 };
 </script>
 
@@ -92,5 +98,10 @@ export default {
 .footer-nav {
   @include container_80;
   margin-top: 1.25rem;
+  li>a{
+padding:  .625rem .9375rem;
+font-size: .75rem;
+
+  }
 }
 </style>

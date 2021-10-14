@@ -1,34 +1,39 @@
 [
   {
-    "nameLink": "HOME",
+    "nameLink": "Home",
     "url": "#"
   },
   {
-    "nameLink": "SHOP",
+    "nameLink": "Shop",
     "url": "#"
   },
   {
-    "nameLink": "ABOUT",
+    "nameLink": "About",
     "url": "#"
   },
   {
-    "nameLink": "GALLERY",
+    "nameLink": "Gallery",
     "url": "#"
   },
   {
-    "nameLink": "LOCATIONS",
+    "nameLink": "Location",
     "url": "#"
   },
   {
-    "nameLink": "JOURNAL",
+    "nameLink": "Journal",
     "url": "#"
   },
   {
-    "nameLink": "CONTACT",
+    "nameLink": "Contact",
     "url": "#"
   },
   {
-    "nameLink": "MY ACCOUNT",
+    "nameLink": "My account",
+    "url": "#"
+  },
+  {
+    "nameLink": "Orders",
     "url": "#"
   }
+
 ]
