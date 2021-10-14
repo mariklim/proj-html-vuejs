@@ -5,7 +5,7 @@
     </div>
     <ul>
       <li>
-        <Link v-for="(link, index) in resultB" :key="index" :link="link" />
+        <Link v-for="(link, index) in newArrLinks" :key="index" :link="link" />
         <a href="#"><i class="fas fa-shopping-cart"></i></a>
       </li>
     </ul>
@@ -23,13 +23,12 @@ export default {
   },
   data() {
     return {
-      links: elm,
-      resultB: "",
-    };
+      newArrLinks: elm,
+    }
   },
   created() {
-    this.resultB = this.links.slice(8,1);
-    console.log(this.resultB);
+    this.newArrLinks.splice(this.newArrLinks.length - 1);
+
   },
 };
 </script>
@@ -38,7 +37,7 @@ export default {
 @import "../assets/style/common";
 header {
   height: 4.375rem;
-  top:0;
+  top: 0;
   left: 0;
   width: 100%;
   background-color: transparent;
@@ -48,18 +47,16 @@ header {
   margin-top: 1.25rem;
   padding: 1.875rem;
 
-
-  ul{
-     padding: 0 .625rem;
-     li{
-       a{
-         padding: 0 1.25rem;
-         font-size: .75rem;
-         font-weight: 500;
-       }
-     }
-      
-    
+  ul {
+    padding: 0 0.625rem;
+    li {
+      a {
+        padding: 0 1.25rem;
+        font-size: 0.75rem;
+        font-weight: 500;
+        text-transform: uppercase ;
+      }
+    }
   }
 
   .logo {
