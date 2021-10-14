@@ -126,8 +126,17 @@ export default {
     font-size: 1.125rem;
   }
   input {
-    padding: 0.4375rem 1.25rem;
+    padding: .625rem 1.375rem;
     margin-right: 0.3125rem;
+    border:1px solid rgba(196, 190, 190, 0.534);
+    border-radius: .4375rem;
+    &:hover{
+      border:1px solid rgba(182, 155, 155, 0.726);
+    }
+    &:focus {
+        outline: none;
+      }
+
   }
 }
 .footer-nav {
@@ -136,6 +145,10 @@ export default {
   margin-top: 1.25rem;
   li > a {
     padding: 0.625rem 0.9375rem;
+        transition: all 0.7s ease;
+    &:hover{
+       color:rgb(201, 181, 181);
+    }
   }
   .ordersNumber {
     margin-left: 0.3125rem;
@@ -161,7 +174,12 @@ font-size: .625rem;
     .icon-social{
       a{
         padding: 0 .625rem;
+          transition: all 0.7s ease;
+        &:hover{
+          color:rgb(201, 181, 181);
+        }
       }
+
     }
 
 
