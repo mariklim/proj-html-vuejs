@@ -23,9 +23,45 @@
       <ul>
         <li>
           <Link v-for="(link, index) in result" :key="index" :link="link" />
-          <a href="#"><i class="fas fa-shopping-cart"></i></a>
+          <a href="#">
+            <i class="fas fa-shopping-cart"></i>
+
+            <span class="ordersNumber"> 0 </span>
+          </a>
         </li>
       </ul>
+    </section>
+    <section class="footer-bottom">
+      <div class="copyright">
+        <p>
+          © Copyright 2019 | Avada Theme by ThemeFusion | All Rights Reserved |
+          Powered by WordPress
+        </p>
+      </div>
+      <div class="icon-social">
+        <ul>
+          <li>
+            <a href="#">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </li>
+           <li>
+            <a href="#">
+           <i class="fab fa-pinterest-p"></i> 
+            </a>
+          </li>
+        </ul>
+      </div>
     </section>
   </footer>
 </template>
@@ -41,14 +77,13 @@ export default {
   data() {
     return {
       links: elm,
-      result:'',
+      result: "",
     };
   },
   created() {
-	this.result = this.links.slice(1);
-  console.log(this.result);
-}
-  
+    this.result = this.links.slice(1);
+    console.log(this.result);
+  },
 };
 </script>
 
@@ -96,12 +131,40 @@ export default {
   }
 }
 .footer-nav {
+  font-size: 0.75rem;
   @include container_80;
   margin-top: 1.25rem;
-  li>a{
-padding:  .625rem .9375rem;
-font-size: .75rem;
-
+  li > a {
+    padding: 0.625rem 0.9375rem;
   }
+  .ordersNumber {
+    margin-left: 0.3125rem;
+    display: inline-block;
+    text-align: center;
+    width: 1.25rem;
+    height: 1.25rem;
+    line-height: 1.25rem;
+    vertical-align: middle;
+    border-radius: 50%;
+    background-color: $main_color_light;
+  }
+}
+
+.footer-bottom{
+  @include container_80;
+  @include margin_top_bottom_70px;
+  display: flex;
+  justify-content: space-between;
+    .copyright{
+font-size: .625rem;
+    }
+    .icon-social{
+      a{
+        padding: 0 .625rem;
+      }
+    }
+
+
+
 }
 </style>
