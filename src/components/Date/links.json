@@ -1,39 +1,48 @@
 [
   {
     "nameLink": "Home",
-    "url": "#"
+    "url": "#",
+    "isActive": true
   },
   {
     "nameLink": "Shop",
-    "url": "#"
+    "url": "#",
+    "isActive": false
   },
   {
     "nameLink": "About",
-    "url": "#"
+    "url": "#",
+    "isActive": false
   },
   {
     "nameLink": "Gallery",
-    "url": "#"
+    "url": "#",
+    "isActive": false
   },
   {
     "nameLink": "Location",
-    "url": "#"
+    "url": "#",
+    "isActive": false
   },
   {
     "nameLink": "Journal",
-    "url": "#"
+    "url": "#",
+    "isActive": false
   },
   {
     "nameLink": "Contact",
-    "url": "#"
+    "url": "#",
+    "isActive": false
   },
   {
     "nameLink": "My account",
-    "url": "#"
+    "url": "#",
+    "isActive": false
   },
   {
     "nameLink": "Orders",
-    "url": "#"
+    "url": "#",
+    "isActive": false
   }
 
 ]
