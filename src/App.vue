@@ -4,7 +4,7 @@
     <Hero />
     <main>
       
-      <Products />
+      <Products :imagesArr="imagesArr" />
       <Corporate />
       <Steps />
       <Contacts />
@@ -43,6 +43,36 @@ export default {
 
     Footer
   },
+  data(){
+    return{
+      imagesArr:[
+    {   
+        name: "Choco Chip Cookies",
+        src: require("./assets/image/choco-chip-cookies-400x510.jpg"),
+        price:"$18.00 – $32.00",
+        type:"Coocies, Pastries"
+    },
+    {   
+        name: "Strawberry Jam Cookies",
+        src: require("./assets/image/strawberry-jam-cookies-400x510.jpg"),
+        price:"$18.00 – $32.00",
+        type:"Coocies, Pastries"
+    },
+    {   
+        name: "Strawberry Donut",
+        src: require("./assets/image/strawberry-donut-400x510.jpg"),
+        price:"$18.00 – $32.00",
+        type:"Coocies, Pastries"
+    },
+    {   
+        name: "Perfect Macarons",
+        src: require("./assets/image/perfect-macarons-400x510.jpg"),
+        price:"$18.00 – $32.00",
+        type:"Coocies, Pastries"
+    }
+]
+    }
+  }
 };
 </script>,
  
