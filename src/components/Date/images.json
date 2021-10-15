@@ -1,18 +1,18 @@
 [
     {   
         "name": "choco chip cookies",
-        "src": "scr/assets/image/choco-chip-cookies-400x510.jpg"
+        "src": "../assets/image/choco-chip-cookies-400x510.jpg"
     },
     {   
         "name": "strawberry jam cookies",
-        "src": "scr/assets/image/strawberry-jam-cookies-400x510.jpg"
+        "src": "../assets/image/strawberry-jam-cookies-400x510.jpg"
     },
     {   
         "name": "strawberry donut",
-        "src": "scr/assets/image/strawberry-donut-400x510.jpg"
+        "src": "../assets/image/strawberry-donut-400x510.jpg"
     },
     {   
         "name": "macarons",
-        "src": "scr/assets/image/perfect-macarons-400x510.jpg"
+        "src": "../assets/image/perfect-macarons-400x510.jpg"
     }
 ]

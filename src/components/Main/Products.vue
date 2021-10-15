@@ -13,35 +13,15 @@
       </div>
       <div class="prod_gallery">
         <ul>
-          <li>
+          <li v-for="image in newArrImg" :key="image.id">
             <div class="cardImg">
               <div class="img">
-                <img
-                  src="../../assets/image/choco-chip-cookies-500x638.jpg"
-                  alt="choco chip cookies"
-                />
+                <img :src="image.src" :alt="image.name" />
                 <div class="img_cover">
                   <div class="description">
-                    <h4>Choco chip cookies</h4>
-                    <p>Coocies, Pastries</p>
-                    <h4 class="price">$18.00 – $32.00</h4>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="cardImg">
-              <div class="img">
-                <img
-                  src="../../assets/image/strawberry-jam-cookies-500x638.jpg"
-                  alt="strawberry jam cookies"
-                />
-                <div class="img_cover">
-                  <div class="description">
-                    <h4>Strawberry jam cookies</h4>
-                    <p>Coocies, Pastries</p>
-                    <h4 class="price">$18.00 – $32.00</h4>
+                    <h4>{{ image.name }}</h4>
+                    <p>{{ image.type }}</p>
+                    <h4 class="price">{{ image.price }}</h4>
                   </div>
                 </div>
               </div>
@@ -56,6 +36,19 @@
 <script>
 export default {
   name: "Products",
+  props: {
+    imagesArr: Array,
+  },
+  data() {
+    return{
+      newArrImg:this.imagesArr,
+    }
+  },
+
+  //per stampare solo 2 foto da arr
+  created() {
+    this.newArrImg.splice(this.newArrImg.length - 2, 3);
+  },
 };
 </script>
 
