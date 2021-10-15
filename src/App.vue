@@ -1,15 +1,12 @@
 <template>
   <div id="app">
-    <Header/>
+    <Header />
     <Hero />
     <main>
-      
-      <Products :imagesArr="imagesArr" />
+      <Products :imagesArr="imagesArr" :idStart="idStart" />
       <Corporate />
       <Steps />
       <Contacts />
-      
-     
     </main>
     <Footer />
   </div>
@@ -41,38 +38,43 @@ export default {
     Contacts,
     // Main
 
-    Footer
+    Footer,
   },
-  data(){
-    return{
-      imagesArr:[
-    {   
-        name: "Choco Chip Cookies",
-        src: require("./assets/image/choco-chip-cookies-400x510.jpg"),
-        price:"$18.00 – $32.00",
-        type:"Coocies, Pastries"
-    },
-    {   
-        name: "Strawberry Jam Cookies",
-        src: require("./assets/image/strawberry-jam-cookies-400x510.jpg"),
-        price:"$18.00 – $32.00",
-        type:"Coocies, Pastries"
-    },
-    {   
-        name: "Strawberry Donut",
-        src: require("./assets/image/strawberry-donut-400x510.jpg"),
-        price:"$18.00 – $32.00",
-        type:"Coocies, Pastries"
-    },
-    {   
-        name: "Perfect Macarons",
-        src: require("./assets/image/perfect-macarons-400x510.jpg"),
-        price:"$18.00 – $32.00",
-        type:"Coocies, Pastries"
-    }
-]
-    }
-  }
+  data() {
+    return {
+      imagesArr: [
+        {
+          name: "Choco Chip Cookies",
+          src: require("./assets/image/choco-chip-cookies-400x510.jpg"),
+          price: "$18.00 – $32.00",
+          type: "Coocies, Pastries",
+          id: 1,
+        },
+        {
+          name: "Strawberry Jam Cookies",
+          src: require("./assets/image/strawberry-jam-cookies-400x510.jpg"),
+          price: "$18.00 – $32.00",
+          type: "Coocies, Pastries",
+          id: 2,
+        },
+        {
+          name: "Strawberry Donut",
+          src: require("./assets/image/strawberry-donut-400x510.jpg"),
+          price: "$18.00 – $32.00",
+          type: "Coocies, Pastries",
+          id: 3,
+        },
+        {
+          name: "Perfect Macarons",
+          src: require("./assets/image/perfect-macarons-400x510.jpg"),
+          price: "$18.00 – $32.00",
+          type: "Coocies, Pastries",
+          id: 4,
+        },
+      ],
+      idStart: 2,
+    };
+  },
 };
 </script>,
  
