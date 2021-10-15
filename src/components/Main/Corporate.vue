@@ -65,8 +65,8 @@
             <div class="cardImg">
               <div class="img">
                 <img
-                  src="../../assets/image/choco-chip-cookies-400x510.jpg"
-                  alt="choco chip cookies"
+                  src="../../assets/image/strawberry-jam-cookies-400x510.jpg"
+                  alt="strawberry jam cookies"
                 />
                 <div class="img_cover">
                   <div class="description">
@@ -76,7 +76,7 @@
                 </div>
               </div>
               <div class="description">
-                <h4>Choco chip cookies</h4>
+                <h4>Strawberry Jam Cookies</h4>
                 <h5>$18.00 – $32.00</h5>
               </div>
             </div>
@@ -85,8 +85,8 @@
             <div class="cardImg">
               <div class="img">
                 <img
-                  src="../../assets/image/choco-chip-cookies-400x510.jpg"
-                  alt="choco chip cookies"
+                  src="../../assets/image/strawberry-donut-400x510.jpg"
+                  alt="Strawberry Donut"
                 />
                 <div class="img_cover">
                   <div class="description">
@@ -96,7 +96,7 @@
                 </div>
               </div>
               <div class="description">
-                <h4>Choco chip cookies</h4>
+                <h4>Strawberry Donut</h4>
                 <h5>$18.00 – $32.00</h5>
               </div>
             </div>
@@ -105,8 +105,8 @@
             <div class="cardImg">
               <div class="img">
                 <img
-                  src="../../assets/image/choco-chip-cookies-400x510.jpg"
-                  alt="choco chip cookies"
+                  src="../../assets/image/perfect-macarons-400x510.jpg"
+                  alt="Perfect Macarons"
                 />
                 <div class="img_cover">
                   <div class="description">
@@ -116,7 +116,7 @@
                 </div>
               </div>
               <div class="description">
-                <h4>Choco chip cookies</h4>
+                <h4>Perfect Macarons</h4>
                 <h5>$18.00 – $32.00</h5>
               </div>
             </div>
