@@ -26,9 +26,9 @@ export default {
       newArrLinks: elm,
     };
   },
-  created() {
-    this.newArrLinks.splice(this.newArrLinks.length - 1);
-  },
+  // created() {
+  //   this.newArrLinks.pop();
+  // },
 };
 </script>
 

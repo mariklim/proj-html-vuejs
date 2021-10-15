@@ -4,7 +4,7 @@
     <Hero />
     <main>
       <Products :imagesArr="imagesArr" :idStart="idStart" />
-      <Corporate />
+      <Corporate :imagesArr="imagesArr"/>
       <Steps />
       <Contacts />
     </main>
@@ -72,7 +72,7 @@ export default {
           id: 4,
         },
       ],
-      idStart: 2,
+      idStart: 0,
     };
   },
 };

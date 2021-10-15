@@ -132,6 +132,7 @@
 <script>
 export default {
   name: "Corporate",
+  
 };
 </script>
 
