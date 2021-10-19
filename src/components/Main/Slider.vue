@@ -5,7 +5,7 @@
       :visible-slides="2"
       slide-multiple
       :gap="1"
-      :slide-ratio="1 / 3"
+      :slide-ratio="1 / 2"
       :dragging-distance="200"
       :breakpoints="{ 800: { visibleSlides: 2, slideMultiple: 2 } }"
     >
