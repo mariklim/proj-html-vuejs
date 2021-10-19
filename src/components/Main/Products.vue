@@ -70,10 +70,11 @@ export default {
   display: flex;
   justify-content: space-between;
   .our_products {
-    width: 30%;
-    & .text {
-      padding-right: 1.25rem;
-    }
+    width:calc(30% - 3.125rem);
+    padding-right: 3.125rem;
+    // & .text {
+    //   padding-right: 1.25rem;
+    // }
   }
 }
 </style>
