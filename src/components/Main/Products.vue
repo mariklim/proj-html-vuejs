@@ -12,6 +12,9 @@
         <button class="btn_lilac">Explore our products</button>
       </div>
       <div class="prod_gallery">
+             <Slider />
+      </div>
+      <!-- <div class="prod_gallery">
         <ul>
           <li v-for="image in newArrImg" :key="image.id">
             <div class="cardImg">
@@ -28,14 +31,18 @@
             </div>
           </li>
         </ul>
-      </div>
+      </div> -->
     </div>
   </section>
 </template>
 
 <script>
+import Slider from "./Slider.vue";
 export default {
   name: "Products",
+  components:{
+    Slider
+  },
   props: {
     imagesArr: Array,
   },
