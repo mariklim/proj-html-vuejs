@@ -1,7 +1,7 @@
 <template>
   <section class="header-hero">
     <div class="container hero">
-      <div class="text">
+      <div  class="text">
         <h5>FRESH & TASTY BAKERY EVERY DAY</h5>
         <h2>The Perfect Fresh Bread</h2>
         <p>

@@ -1,6 +1,6 @@
 <template>
   <section>
-    <section class="section_1">
+    <section v-scroll-reveal.reset="{ delay: 250 }" class="section_1">
       <div class="container_step">
         <div class="step_top">
           <div class="step_title">
@@ -21,7 +21,7 @@
         </div>
       </div>
     </section>
-    <section class="section_2">
+    <section v-scroll-reveal.reset="{ delay: 250 }" class="section_2">
       <div class="container_step">
         <div class="box_left">
           <div class="step_top">
@@ -51,7 +51,7 @@
         </div>
       </div>
     </section>
-     <section class="section_3">
+     <section v-scroll-reveal.reset="{ delay: 250 }" class="section_3">
       <div class="container_step">
         <div class="step_top">
           <div class="step_title">

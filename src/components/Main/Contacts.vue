@@ -1,11 +1,11 @@
 <template>
   <section>
-    <section class="visit_shop">
+    <section v-scroll-reveal.reset="{ delay: 250 }" class="visit_shop">
       <div class="text">
         <h5>LOCATIONS</h5>
         <h3>Visit our Bakeries</h3>
       </div>
-      <div class="container_contacts">
+      <div v-scroll-reveal.reset="{ delay: 300 }" class="container_contacts">
         <div class="contact">
           <div class="contact_img">
             <img
@@ -49,7 +49,8 @@
         </div>
       </div>
     </section>
-    <section class="row">
+    <section v-scroll-reveal.reset="{ delay: 250 }">
+    <div class="row">
       <div class="square_img">
         <img src="../../assets/image/social-1.jpg" alt="social" />
       </div>
@@ -65,7 +66,7 @@
       <div class="square_img">
         <img src="../../assets/image/social-2.jpg" alt="social" />
       </div>
-    </section>
+    </div>
     <div class="row">
       <div class="square_img">
         <img src="../../assets/image/social-3.jpg" alt="social" />
@@ -80,6 +81,7 @@
         <img src="../../assets/image/social-6.jpg" alt="social" />
       </div>
     </div>
+    </section>
   </section>
 </template>
 

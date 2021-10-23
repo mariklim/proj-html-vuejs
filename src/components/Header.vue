@@ -55,7 +55,7 @@ header {
   top: 0;
   z-index: 10;
    &.change_color {
-       background-color:rgba(255, 255, 255, 0.89)
+       background-color:rgb(255, 255, 255)
    }
 
 

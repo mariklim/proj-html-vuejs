@@ -1,7 +1,7 @@
 <template>
   <section>
     <!--CORPORATE & WEDDINGS  -->
-    <div class="corporate">
+    <div v-scroll-reveal.reset="{ delay: 300}" class="corporate">
       <h5>CORPORATE & WEDDINGS</h5>
       <h3>Baking Special Moments</h3>
       <div class="corporate_cards">
@@ -14,7 +14,7 @@
             </span>
           </div>
         </div>
-        <div class="card wedding">
+        <div v-scroll-reveal.reset="{ delay: 600}" class="card wedding">
           <div class="card wedding active">
             <span>
               <h5>PRIVATE DINING HALL</h5>
@@ -29,7 +29,7 @@
 
     <!-- SHOP gallery -->
     <div class="shop_gallery">
-      <div class="text">
+      <div v-scroll-reveal.reset="{ delay: 250}" class="text">
         <span>
           <h3>Find a freshly baked product perfect for you</h3>
           <p>
@@ -39,7 +39,7 @@
           <button class="btn_lilac">Shop all products</button>
         </span>
       </div>
-      <div class="prod_gallery">
+      <div v-scroll-reveal.reset="{ delay: 300 }" class="prod_gallery">
         <Slider4 />
       </div>
     </div>
