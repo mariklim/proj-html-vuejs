@@ -9,7 +9,6 @@
       <Contacts />
     </main>
     <Footer />
-       <Slider />
   </div>
 </template>
 
@@ -25,8 +24,6 @@ import Contacts from "./components/Main/Contacts.vue";
 // Main
 
 import Footer from "./components/Footer.vue";
-import Slider from "./components/Main/Slider.vue";
-
 export default {
   name: "App",
   components: {
@@ -41,7 +38,7 @@ export default {
     // Main
 
     Footer,
-    Slider
+  
   },
   data() {
     return {

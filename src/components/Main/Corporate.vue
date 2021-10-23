@@ -40,88 +40,7 @@
         </span>
       </div>
       <div class="prod_gallery">
-        <ul>
-          <li>
-            <div class="cardImg">
-              <div class="img">
-                <img
-                  src="../../assets/image/choco-chip-cookies-400x510.jpg"
-                  alt="choco chip cookies"
-                />
-                <div class="img_cover">
-                  <div class="description">
-                    <h4>SELECT OPTIONS /</h4>
-                    <h5>QUICK VIEW</h5>
-                  </div>
-                </div>
-              </div>
-              <div class="description">
-                <h4>Choco chip cookies</h4>
-                <h5>$18.00 – $32.00</h5>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="cardImg">
-              <div class="img">
-                <img
-                  src="../../assets/image/strawberry-jam-cookies-400x510.jpg"
-                  alt="strawberry jam cookies"
-                />
-                <div class="img_cover">
-                  <div class="description">
-                    <h4>SELECT OPTIONS /</h4>
-                    <h5>QUICK VIEW</h5>
-                  </div>
-                </div>
-              </div>
-              <div class="description">
-                <h4>Strawberry Jam Cookies</h4>
-                <h5>$18.00 – $32.00</h5>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="cardImg">
-              <div class="img">
-                <img
-                  src="../../assets/image/strawberry-donut-400x510.jpg"
-                  alt="Strawberry Donut"
-                />
-                <div class="img_cover">
-                  <div class="description">
-                    <h4>SELECT OPTIONS /</h4>
-                    <h5>QUICK VIEW</h5>
-                  </div>
-                </div>
-              </div>
-              <div class="description">
-                <h4>Strawberry Donut</h4>
-                <h5>$18.00 – $32.00</h5>
-              </div>
-            </div>
-          </li>
-           <li>
-            <div class="cardImg">
-              <div class="img">
-                <img
-                  src="../../assets/image/perfect-macarons-400x510.jpg"
-                  alt="Perfect Macarons"
-                />
-                <div class="img_cover">
-                  <div class="description">
-                    <h4>SELECT OPTIONS /</h4>
-                    <h5>QUICK VIEW</h5>
-                  </div>
-                </div>
-              </div>
-              <div class="description">
-                <h4>Perfect Macarons</h4>
-                <h5>$18.00 – $32.00</h5>
-              </div>
-            </div>
-          </li>
-        </ul>
+        <Slider4 />
       </div>
     </div>
 
@@ -130,10 +49,13 @@
 </template>
 
 <script>
+import Slider4 from "./Slider4.vue";
 export default {
   name: "Corporate",
-  
-};
+  components:{
+ Slider4 
+  }
+}
 </script>
 
 <style lang="scss">
@@ -203,7 +125,7 @@ export default {
     align-items: center;
     width: 25%;
     text-align: center;
-    margin-right: 1.25rem;
+  
     h3 {
       padding: 0;
     }
@@ -213,7 +135,9 @@ export default {
       font-size: 0.75rem;
       line-height: 1.25rem;
     }
+    span{
+      margin-right: 3.75rem;
+    }
   }
-
 }
 </style>

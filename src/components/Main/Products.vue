@@ -12,7 +12,7 @@
         <button class="btn_lilac">Explore our products</button>
       </div>
       <div class="prod_gallery">
-             <Slider />
+             <Slider2 />
       </div>
       <!-- <div class="prod_gallery">
         <ul>
@@ -37,11 +37,11 @@
 </template>
 
 <script>
-import Slider from "./Slider.vue";
+import Slider2 from "./Slider2.vue";
 export default {
   name: "Products",
   components:{
-    Slider
+    Slider2,
   },
   props: {
     imagesArr: Array,

@@ -1,5 +1,5 @@
 <template>
-  <header>
+  <header :class="{change_color: scrollPosition > 50}">
     <div class="logo">
       <img src="../assets/image/avada-bakery-logo.png" alt="logo" />
     </div>
@@ -24,11 +24,17 @@ export default {
   data() {
     return {
       newArrLinks: elm,
+      scrollPosition: null,
     };
   },
-  // created() {
-  //   this.newArrLinks.pop();
-  // },
+  methods: {
+    updateScroll() {
+       this.scrollPosition = window.scrollY
+    }
+},
+mounted() {
+    window.addEventListener('scroll', this.updateScroll);
+}
 };
 </script>
 
@@ -39,12 +45,19 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: transparent;
+  background-color: rgba(255, 255, 255, 0) ;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 1.25rem;
   padding: 1.875rem;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+   &.change_color {
+       background-color:rgba(255, 255, 255, 0.89)
+   }
+
 
   ul {
     padding: 0 0.625rem;
