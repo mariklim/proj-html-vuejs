@@ -34,8 +34,10 @@
     <section class="footer-bottom">
       <div class="copyright">
         <p>
-          © Copyright 2019 | Avada Theme by ThemeFusion | All Rights Reserved |
-          Powered by WordPress
+          © Copyright 2021 | Avada Theme by ThemeFusion | All Rights Reserved |
+          Powered by WordPress |<span id="MK">
+            replication of Maria Klimenko <span class="pulse">&#x2665;</span>
+          </span>
         </p>
       </div>
       <div class="icon-social">
@@ -55,9 +57,9 @@
               <i class="fab fa-facebook"></i>
             </a>
           </li>
-           <li>
+          <li>
             <a href="#">
-           <i class="fab fa-pinterest-p"></i> 
+              <i class="fab fa-pinterest-p"></i>
             </a>
           </li>
         </ul>
@@ -126,28 +128,28 @@ export default {
     font-size: 1.125rem;
   }
   input {
-    padding: .625rem 1.375rem;
+    padding: 0.625rem 1.375rem;
     margin-right: 0.3125rem;
-    border:1px solid rgba(196, 190, 190, 0.534);
-    border-radius: .4375rem;
-    &:hover{
-      border:1px solid rgba(182, 155, 155, 0.726);
+    border: 1px solid rgba(196, 190, 190, 0.534);
+    border-radius: 0.4375rem;
+    &:hover {
+      border: 1px solid rgba(182, 155, 155, 0.726);
     }
     &:focus {
-        outline: none;
-      }
-
+      outline: none;
+    }
   }
 }
 .footer-nav {
-  font-size: 0.75rem;
+  font-size: 1rem;
   @include container_80;
   margin-top: 1.25rem;
   li > a {
     padding: 0.625rem 0.9375rem;
-        transition: all 0.7s ease;
-    &:hover{
-       color:rgb(201, 181, 181);
+    transition: all 0.7s ease;
+    &:hover {
+      color: rgb(51, 21, 90);
+      background-color: rgba(188, 143, 143, 0.274);
     }
   }
   .ordersNumber {
@@ -163,26 +165,64 @@ export default {
   }
 }
 
-.footer-bottom{
+.footer-bottom {
   @include container_80;
   @include margin_top_bottom_70px;
   display: flex;
   justify-content: space-between;
-    .copyright{
-font-size: .625rem;
-    }
-    .icon-social{
-      a{
-        padding: 0 .625rem;
-          transition: all 0.7s ease;
-        &:hover{
-          color:rgb(201, 181, 181);
-        }
+  .copyright {
+    font-size: 14px;
+  }
+  .icon-social {
+    a {
+      padding: 0 0.625rem;
+      transition: all 0.7s ease;
+      &:hover {
+        color: rgb(177, 15, 142);
       }
-
     }
+  }
+}
 
+@mixin inline-animation($duration) {
+  $name: inline-#{unique-id()};
 
+  @keyframes #{$name} {
+    @content;
+  }
 
+  animation-name: $name;
+  animation-duration: $duration;
+  animation-iteration-count: infinite;
+}
+
+.pulse {
+  opacity: 0;
+  font-size: 0.9375rem;
+  color: rgb(209, 9, 52);
+  animation: all;
+  transition: all 0.7s ease;
+}
+.pulse {
+  @include inline-animation(2s) {
+    from {
+      font-size: 0.75rem;
+    }
+    to {
+      font-size: 0.875rem;
+    }
+  }
+}
+
+#MK {
+  transition: all 0.7s ease;
+}
+#MK:hover {
+  color: rgb(209, 9, 52);
+  cursor: pointer;
+  font-weight: 500;
+}
+#MK:hover .pulse {
+  opacity: 1;
 }
 </style>
