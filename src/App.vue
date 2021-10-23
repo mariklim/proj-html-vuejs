@@ -9,6 +9,8 @@
       <Contacts />
     </main>
     <Footer />
+    <ScrollTopArrow></ScrollTopArrow>
+   
   </div>
 </template>
 
@@ -24,6 +26,7 @@ import Contacts from "./components/Main/Contacts.vue";
 // Main
 
 import Footer from "./components/Footer.vue";
+import ScrollTopArrow from './ScrollTopArrow.vue';
 export default {
   name: "App",
   components: {
@@ -38,6 +41,7 @@ export default {
     // Main
 
     Footer,
+    ScrollTopArrow,
   
   },
   data() {
@@ -73,13 +77,17 @@ export default {
         },
       ],
       idStart: 0,
+ 
     };
   },
+  
 };
-</script>,
+</script>
  
 
 <style lang="scss">
 @import "~@fortawesome/fontawesome-free/css/all.css";
 @import "./assets/style/common";
+
+
 </style>

@@ -2,7 +2,7 @@
   <section >
     <div class="products">
       <div class="our_products">
-        <div  v-scroll-reveal.reset="{ delay: 250}" class="text">
+        <div  v-scroll-reveal.reset="{ delay: 100}" class="text">
           <h5>OUR PRODUCTS</h5>
           <h3>
             All our delectable pastries are backed fresh in our Kitchen very
@@ -11,7 +11,7 @@
         </div>
         <button class="btn_lilac">Explore our products</button>
       </div>
-      <div v-scroll-reveal.reset="{ delay: 300 }" class="prod_gallery">
+      <div v-scroll-reveal.reset="{ delay: 150}" class="prod_gallery">
              <Slider2 />
       </div>
       <!-- <div class="prod_gallery">
