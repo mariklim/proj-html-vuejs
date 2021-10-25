@@ -105,7 +105,7 @@
         </div>
       </div>
     </section>
-    <section v-scroll-reveal.reset="{ delay: 100 }">
+    <section class="social">
       <div class="row">
         <div class="square_img">
           <img src="../../assets/image/social-1.jpg" alt="social" />
@@ -176,7 +176,7 @@ export default {
         transition: all 0.7s ease;
       }
 
-      //hover per img di contatti
+      //hover img contatti
       .contact_img img:hover {
         transform: scale(1.06);
       }
@@ -229,6 +229,7 @@ export default {
     }
   }
 }
+
 .row {
   width: 100%;
   height: 250px;
