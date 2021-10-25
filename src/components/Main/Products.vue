@@ -14,24 +14,6 @@
       <div v-scroll-reveal.reset="{ delay: 150}" class="prod_gallery">
              <Slider2 />
       </div>
-      <!-- <div class="prod_gallery">
-        <ul>
-          <li v-for="image in newArrImg" :key="image.id">
-            <div class="cardImg">
-              <div class="img">
-                <img :src="image.src" :alt="image.name" />
-                <div class="img_cover">
-                  <div class="description">
-                    <h4>{{ image.name }}</h4>
-                    <p>{{ image.type }}</p>
-                    <h4 class="price">{{ image.price }}</h4>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </li>
-        </ul>
-      </div> -->
     </div>
   </section>
 </template>
@@ -43,19 +25,8 @@ export default {
   components:{
     Slider2,
   },
-  props: {
-    imagesArr: Array,
-  },
-  data() {
-    return{
-      newArrImg:this.imagesArr,
-    }
-  },
 
-  //per stampare solo 2 foto da arr
-  created() {
-    this.newArrImg.splice(this.newArrImg.length - 2, 3);
-  },
+  
 };
 </script>
 

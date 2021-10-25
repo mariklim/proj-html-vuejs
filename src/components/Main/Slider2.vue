@@ -99,24 +99,6 @@ width: 100%;
 padding: .9375rem 0;
 }
 
-// .vueperslide::after {
-//   content: "";
-//   display: flex;
-//   position: absolute;
-//   justify-content: center;
-//   align-items: center;
-//   top: 0;
-//   bottom: 0;
-//   right: 0;
-//   left: 0;
-//   background-color: rgba(39, 33, 33, 0.39);
-//   opacity: 1;
-//   transition: all 1s;
-//   cursor: pointer;
-// }
-
-
-// <div target="_self" aria-hidden="false" class="vueperslide vueperslide--active vueperslide--visible" style="background-image: url(&quot;img/choco-chip-cookies-400x510.a12500a7.jpg&quot;); width: 49.5%; margin-right: 1%;"><!----><!----><div class="vueperslide__content-wrapper"><div class="vueperslide__title">Choco Chip Cookies</div><div class="vueperslide__content">$18.00 – $32.00</div></div><!----></div>
 
 .vueperslide:hover .vueperslide__title {
  opacity: 1;
